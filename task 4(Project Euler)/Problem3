@@ -1,0 +1,14 @@
+n=int(input())
+for i in range(n):
+  k=2
+  n1=int(input())
+  while n1%k==0:
+    n1=n1//k
+  for j in range(3,int(n1**(0.5))+1,2):
+    while n1%j==0:
+      k=j
+      n1=n1//j
+  if n1>2:
+    print(n1)
+  else:
+    print(k)
