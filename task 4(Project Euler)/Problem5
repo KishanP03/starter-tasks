@@ -1,0 +1,14 @@
+n=int(input())
+for i in range(n):
+  n1=int(input())
+  c=2
+  k=n1
+  while c<=n1:
+    if k%c==0:
+      c=c+1
+      continue
+    else:
+      c=2
+      k=k+1
+      continue
+  print(k)
